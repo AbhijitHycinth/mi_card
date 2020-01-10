@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mi_card/MiCard/widgets/CardDivider.dart';
 import 'package:mi_card/MiCard/widgets/ContactInfo.dart';
 import 'package:mi_card/MiCard/widgets/Designation.dart';
 import 'package:mi_card/MiCard/widgets/Name.dart';
@@ -29,6 +30,7 @@ class MiCard extends StatelessWidget {
         ),
         Name(fullName: 'Abhijit Hycinth'),
         Designation(role: 'Application Developer'),
+        CardDivider(),
         ContactInfo(
           icon: Icons.settings_phone,
           contactDetail: "+91 7767 985 877",
