@@ -9,27 +9,23 @@ class ContactInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      margin: EdgeInsets.only(top: 10.0),
-      padding: EdgeInsets.fromLTRB(5.0, 7.0, 20.0, 7.0),
-      color: Colors.white,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[
-          Icon(
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 5.0, horizontal: 7.0),
+      child: Card(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+        elevation: 10.0,
+        margin: EdgeInsets.only(top: 10.0),
+        color: Colors.white,
+        child: ListTile(
+          leading: Icon(
             this.icon,
             color: Colors.teal[900],
           ),
-          SizedBox(width: 20.0),
-          Flexible(
-            child: Text(
-              this.contactDetail,
-              style: Style.contactDetails,
-            ),
-          )
-        ],
+          title: Text(
+            this.contactDetail,
+            style: Style.contactDetails,
+          ),
+        ),
       ),
     );
   }

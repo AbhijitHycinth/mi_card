@@ -20,7 +20,7 @@ class Style {
 
   static TextStyle contactDetails = TextStyle(
     color: contactDetailsColor,
-    letterSpacing: 3.0,
+    letterSpacing: 2.0,
     fontSize: 13.0,
   );
 }
